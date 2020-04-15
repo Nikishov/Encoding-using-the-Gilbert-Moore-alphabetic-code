@@ -42,4 +42,12 @@ def gilbertMur():
 		except:
 			pass
 
+	s = 0.0
+	h = 0.0
+	for i in text.lower():
+		s += id_2[i][0] * id_2[i][1]
+		h += id_2[i][0] * m.log2(1 / id_2[i][0])
+	print()
+	print(s)
+	print(h + 2)
 gilbertMur()
